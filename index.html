@@ -2,38 +2,68 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titik Universe</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <title>Emote</title>
 </head>
 <body>
-    <div class="main">
-        <div class="header">
-            
-        </div>
-        <div class="page">
-            <div class="left-side">
-                <div id="name" class="top-info"><span>Титов Семён</span></div>
-                <div id="status" class="top-info"><span>Я программист</span></div>
-                <div id="more" class="top-info"><span>Ещё</span></div>
+    <section id="main">
+        <header id="header" class="box-radius-white shadow">
+            <div id="logo">
+                <img src="./img/logo.png" alt="LOGO">
             </div>
-            <div class="middle">
-                <div id="avatar-container">
-                    <img id="avatar" src="./img/avatar.jpg" alt="">
+        </header>
+
+        <article id="content-page">
+            <div id="left">
+                <div class="top-info">
+                    <div class="box-radius-white shadow" id="name"><span>Титов Семён</span></div>
+                    <div class="box-radius-white shadow" id="status"><span>Статус</span></div>
+                    <div class="box-radius-white shadow" id="more-top-info"><span>Ещё</span></div>
                 </div>
             </div>
-            <div class="right-side">
-                <div class="wall">
-                    <div class="post post-text">
-                        Привет, меня зовут Семён и я люблю, когда моё имя пишут через букву "ё"
+
+            <div id="center">
+                <div class="avatar-container box-radius-white shadow">
+                    <img src="./img/avatar.jpg" alt="AVTR">
+                </div>
+            </div>
+
+            <div id="right">
+                <div id="right-top-content">
+                    <div class="emote-item-menu">
+                        <div class="emote-item box-radius-white shadow"><img src="./img/icon/hearts-icon.png" alt=""></div>
+                        <div class="emote-item box-radius-white shadow"><img src="./img/icon/hearts-icon.png" alt=""></div>
+                        <div class="emote-item box-radius-white shadow"><img src="./img/icon/hearts-icon.png" alt=""></div>
+                        <button id="add-post-btn" class="main-btn shadow">Добавить</button>
                     </div>
-                    <div class="post post-image">
-                        <img src="./img/postexample.jpg" alt="">
+                    <div class="wall">
+    
+                        <div class="post text-post box-radius-white shadow">
+                            <div class="post-content">
+                                <span>Тут текст поста. Этот пост является текстовым. Все горизонтальные посты текстовые. В текстовых постах удобно оставлять свои мысли и любые идеи</span>
+                            </div>
+                            <!-- <div class="post-option">
+                                <hr>
+                                <img src="./img/icon/like-red.png" alt="LIKE">
+                                <img src="./img/icon/comment-white-oval-bubble.png" alt="COMMENT">
+                            </div> -->
+                        </div>
+    
+                        <div class="post image-post box-radius-white shadow">
+                            <div class="post-content">
+                                <img src="./img/tornado.jpg" alt="">
+                            </div>
+                            <!-- <div class="post-option">
+                                <hr>
+                                <img src="./img/icon/like-red.png" alt="LIKE">
+                                <img src="./img/icon/comment-white-oval-bubble.png" alt="COMMENT">
+                            </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>    
+        </article>
+    </section>
 </body>
 </html>
