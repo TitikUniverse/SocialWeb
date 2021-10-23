@@ -25,11 +25,25 @@ body {
     background-color: #008891;
     border-radius: 15px;
     border-style: none;
-    transition: all 300ms ease; 
 }
 .main-btn:hover {
+    transition: all 300ms ease; 
     background-color: #151515;
     border: 3px solid #008891;
+}
+/* .main-btn:not(:hover) {
+    transition: all 700ms ease; 
+    background-color: #151515;
+    border: 3px solid #008891;
+} */
+.post-option-btn {
+    background-color: transparent;
+    border-radius: 15px;
+    border-style: none;
+    transition: all 300ms ease; 
+}
+.post-option-btn:hover {
+    background-color: #008891;
 }
 
 #main {
@@ -163,11 +177,17 @@ body {
     border-radius: 15px;
 }
 
-.post-option>img {
+.text-post .post-option {
+    margin-bottom: 8px;
+}
+.image-post .post-option {
+    margin: 8px 0px;
+}
+.post .post-option {
     margin-left: 15px;
 }
-.post-option img {
+.post-option button img {
     height: 30px;
     width: 30px;
-    padding: 8px 0px 8px 15px;
+    padding: 10px;
 }
