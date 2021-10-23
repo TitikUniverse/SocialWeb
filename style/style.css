@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Helvetica, Arial, Sans-serif;
+    font-size: 15px;
     outline: none;
     color: rgb(209, 209, 209);
 }
@@ -72,40 +73,47 @@ body {
     background-color: #008891;
 }
 .top-info {
-    width: 90%;
+    width: 95%;
     /* padding-right: 15px; */
     float: left;
-    font-size: 20px;
 }
-.top-info div {
+.top-info .top-info-element {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: 50px;
+    height: 60px;
     margin-bottom: 15px;
-    padding: 5px;
+}
+.top-info .top-info-element span {
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .avatar-container {
     width: 100%;
     min-width: 320px;
-    height: 380px;
+    height: 390px;
 
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 .avatar-container img {
-    width: 95%;
+    width: 92%;
     height: 80%;
     object-fit: cover;
     border-radius: 10px;
-    margin: 15px 15px;
+    margin: 15px 0px;
+}
+.avatar-container .avatar-bottom-option {
+    width: 100%;
+    height: 50px;
 }
 
 #right-top-content {
-    width: 95%;
+    width: 96%;
     float: right;
 }
 
@@ -122,6 +130,7 @@ body {
 .emote-item {
     padding: 6px;
     margin-right: 20px;
+    background-color: #00565c;
 }
 #add-post-btn {
     width: 140px;
@@ -140,7 +149,6 @@ body {
 .text-post .post-content {
     padding: 15px;
     min-height: 50px;
-    font-size: 15px;
 }
 .image-post .post-content {
     width: 100%;
