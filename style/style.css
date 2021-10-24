@@ -92,6 +92,8 @@ body {
 }
 #logo img {
     height: 80px;
+    position: relative;
+    bottom: 3px;
 }
 
 .top-info div:last-child {
@@ -174,7 +176,7 @@ body {
     height: 40px;
 }
 .emote-item {
-    padding: 6px;
+    padding: 5px;
     /* margin-right: 20px; */
     background-color: #00565c;
 }
