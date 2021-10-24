@@ -142,10 +142,32 @@ body {
 }
 
 .emote-item-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin-bottom: 25px;
+    display: grid;
+    gap: 13px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    grid-template-areas:
+    "A   B"
+    "C   D"
+    "E   E";
+}
+#emote-item-1 {
+    grid-area: A;
+}
+#emote-item-2 {
+    grid-area: B;
+}
+#emote-item-3 {
+    grid-area: C;
+}
+#emote-item-4 {
+    grid-area: D;
+}
+#add-post-btn {
+    grid-area: E;
+    width: 150px;
+    height: 60px;
 }
 .emote-item img {
     width: 40px;
@@ -153,11 +175,8 @@ body {
 }
 .emote-item {
     padding: 6px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     background-color: #00565c;
-}
-#add-post-btn {
-    width: 140px;
 }
 
 .wall {
